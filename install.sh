@@ -48,7 +48,7 @@ PACKAGES_CORE=(
 #    xorg xorg-dev xbacklight xbindkeys xvkbd xinput
 #    build-essential bspwm sxhkd xdotool
 #    libnotify-bin libnotify-dev
-    xorg-server xorg-xinit xorg-xbacklight xbindkeys xvkbd xorg-xinput
+    xorg-server xorg-xinit xorg-xbacklight xbindkeys xorg-xinput
     base-devel bspwm sxhkd xdotool
     libnotify
 
