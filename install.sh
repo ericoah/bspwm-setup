@@ -163,5 +163,7 @@ find "$CONFIG_DIR"/scripts -type f -exec chmod +x {} \; 2>/dev/null || true
 xdg-user-dirs-update
 mkdir -p ~/Pictures/Screenshots
 
+cp -r $SCRIPT_DIR/wallpaper "$CONFIG_DIR"/ || die "Failed to copy wallpaper directory"
+
 # Done
 echo -e "\n${GREEN}Installation complete!${NC}"
