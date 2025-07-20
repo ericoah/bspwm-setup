@@ -75,7 +75,7 @@ PACKAGES_UTILITIES=(
 #    avahi-daemon acpi acpid xfce4-power-manager
 #    flameshot qimgv nala micro xdg-user-dirs-gtk
     avahi acpi acpid xfce4-power-manager flameshot
-    firefox xdg-user-dirs-gtk micro neovim leafpad git curl wget
+    firefox xdg-user-dirs-gtk micro neovim leafpad git curl wget openssh
  )
 
 PACKAGES_TERMINAL=(
@@ -121,6 +121,7 @@ PACKAGES_BUILD=(
 
     # Enable services
     sudo systemctl enable acpid
+    sudo systemctl enable sshd
 
 # Handle existing config
 if [ -d "$CONFIG_DIR" ]; then
