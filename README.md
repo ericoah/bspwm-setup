@@ -1,6 +1,6 @@
 # 🪟 bspwm-setup
 
-![Made for Archlinux](https://img.shields.io/badge/Made%20for-Debian-A81D33?style=for-the-badge&logo=debian&logoColor=white)
+![Made for Debian and Archlinux](https://img.shields.io/badge/Made%20for-Debian-A81D33?style=for-the-badge&logo=debian&logoColor=white)
 
 A minimal but functional BSPWM rice script for Arch-based systems.  
 Installs all core packages, window manager configs, and themes — ready to go out of the box.
