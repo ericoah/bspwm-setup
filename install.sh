@@ -75,7 +75,7 @@ PACKAGES_UTILITIES=(
 #    avahi-daemon acpi acpid xfce4-power-manager
 #    flameshot qimgv nala micro xdg-user-dirs-gtk
     avahi acpi acpid xfce4-power-manager flameshot
-    firefox xdg-user-dirs-gtk micro neovim leafpad
+    firefox xdg-user-dirs-gtk micro neovim leafpad git curl wget
  )
 
 PACKAGES_TERMINAL=(
