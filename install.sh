@@ -120,7 +120,7 @@ PACKAGES_BUILD=(
     sudo pacman -S --noconfirm "${PACKAGES_BUILD[@]}" || die "Failed to install build tools"
 
     # Enable services
-    sudo systemctl enable avahi acpid
+    sudo systemctl enable acpid
 
 # Handle existing config
 if [ -d "$CONFIG_DIR" ]; then
