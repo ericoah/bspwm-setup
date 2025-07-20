@@ -85,7 +85,7 @@ PACKAGES_TERMINAL=(
 
 PACKAGES_FONTS=(
 #    fonts-recommended fonts-font-awesome fonts-terminus
-    ttf-font-awesome terminus-font ttf-firacode-nerd ttf-jetbrains-nerd ttf-meslo-nerd onoto-fonts 
+    ttf-font-awesome terminus-font ttf-firacode-nerd ttf-jetbrains-mono-nerd ttf-meslo-nerd noto-fonts 
 )
 
 PACKAGES_BUILD=(
