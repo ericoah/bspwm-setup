@@ -8,6 +8,7 @@ set -e
 # Paths
 SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 CONFIG_DIR="$HOME/.config/bspwm"
+FONTS_DIR="$HOME/.local/share"
 TEMP_DIR="/tmp/bspwm_$$"
 LOG_FILE="$HOME/bspwm-install.log"
 
@@ -158,13 +159,17 @@ done
 
 # Make scripts executable
 chmod +x "$CONFIG_DIR"/bspwmrc
-find "$CONFIG_DIR"/scripts -type f -exec chmod +x {} \; 2>/dev/null || true
+find "$CONFIG_DIR"/polybar/forest/scripts -type f -exec chmod +x {} \; 2>/dev/null || true
 
 # Setup directories
 xdg-user-dirs-update
-mkdir -p ~/Pictures/Screenshots
 
 cp -r $SCRIPT_DIR/wallpaper "$CONFIG_DIR"/ || die "Failed to copy wallpaper directory"
+
+# Fonts
+mkdir -p $FONTS_DIR
+mv $SCRIPT_DIR/fonts "$FONTS_DIR"/ || die "Failed to copy wallpaper directory"
+fc-cache -f
 
 # Done
 echo -e "\n${GREEN}Installation complete!${NC}"

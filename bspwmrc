@@ -37,9 +37,6 @@ bspc rule -a Gimp desktop='^9' follow=on
 bspc rule -a obs desktop='^10' follow=on
 bspc rule -a discord desktop='^8' follow=on
 
-## Polybar or tint
-~/.config/bspwm/polybar/lauch.sh &
-
 ## apps for systray if enabled
 # volumeicon &
 # nm-applet &
@@ -87,7 +84,7 @@ bluetoothctl power on &
 dunst -config ~/.config/bspwm/dunst/dunstrc &
 
 ## Polybar
-bash ~/.config/bspwm/polybar/launch.sh >> ~/.polybar.log 2>&1 &
+polybar ~/.config/bspwm/polybar/config.ini >> ~/.polybar.log 2>&1 &
 
 ## Rede
 # nm-applet &
