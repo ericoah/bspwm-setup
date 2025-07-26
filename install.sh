@@ -26,16 +26,6 @@ die() { echo -e "${RED}ERROR: $*${NC}" >&2; exit 1; }
 msg() { echo -e "${CYAN}$*${NC}"; }
 
 
-# Banner
-clear
-echo -e "${CYAN}"
-echo " +-+-+-+-+-+-+-+-+-+-+-+-+-+ "
-echo " |j|u|s|t|a|g|u|y|l|i|n|u|x| "
-echo " +-+-+-+-+-+-+-+-+-+-+-+-+-+ "
-echo " |b|s|p|w|m| |s|e|t|u|p|    | "
-echo " +-+-+-+-+-+-+-+-+-+-+-+-+-+ "
-echo -e "${NC}\n"
-
 read -p "Install BSPWM? (y/n) " -n 1 -r
 echo
 [[ ! $REPLY =~ ^[Yy]$ ]] && exit 1
